@@ -430,10 +430,6 @@ Projektowy `.gitignore` pomija lokalną bazę SQLite, bytecode Pythona, środowi
 
 GitHub Pages hostuje wyłącznie pliki statyczne i nie uruchomi backendu Python. `render.yaml` opisuje stale działającą usługę Python na Render z HTTPS i dyskiem 1 GB dla SQLite. Po opublikowaniu repozytorium na GitHubie utwórz Blueprint w Render Dashboard i połącz repozytorium. Plan `0.5c-512mb` oraz dysk są płatne; opłaty nalicza Render. Automatyczne wdrożenie czeka na pozytywne wyniki GitHub Actions. Dysk zachowuje konta i forum po restarcie, ale obsługuje tylko jedną instancję i może powodować krótką przerwę podczas wdrożenia.
 
-### Stały hosting forum
-
-GitHub Pages hostuje wyłącznie pliki statyczne i nie uruchomi backendu Python. `render.yaml` opisuje stale działającą usługę Python na Render z HTTPS i dyskiem 1 GB dla SQLite. Po opublikowaniu repozytorium na GitHubie utwórz Blueprint w Render Dashboard i połącz repozytorium. Plan `0.5c-512mb` oraz dysk są płatne; opłaty nalicza Render. Automatyczne wdrożenie czeka na pozytywne wyniki GitHub Actions. Dysk zachowuje konta i forum po restarcie, ale obsługuje tylko jedną instancję i może powodować krótką przerwę podczas wdrożenia.
-
 ---
 
 ## Українська
@@ -571,10 +567,6 @@ git push -u origin HEAD
 ```
 
 `.gitignore` виключає локальну SQLite-базу, Python bytecode, віртуальні середовища та файли із секретами. Перед комітом перевірте `git status`. Файл ліцензії не додано: оберіть ліцензію, перш ніж оголошувати проєкт відкритим.
-
-### Постійний хостинг форуму
-
-GitHub Pages розміщує лише статичні файли й не запускає Python backend. `render.yaml` описує постійно працюючий Python-сервіс на Render з HTTPS і диском 1 GB для SQLite. Після публікації репозиторію на GitHub створіть Blueprint у Render Dashboard і під’єднайте репозиторій. План `0.5c-512mb` і диск платні; оплату стягує Render. Автоматичний deploy очікує на успішні перевірки GitHub Actions. Диск зберігає акаунти та форум після перезапуску, але підтримує лише один екземпляр і може спричиняти коротку перерву під час deploy.
 
 ### Постійний хостинг форуму
 
