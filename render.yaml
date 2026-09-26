@@ -1,0 +1,47 @@
+services:
+  - type: web
+    name: common-ground-forum
+    runtime: python
+    plan: 0.5c-512mb
+    region: frankfurt
+    branch: main
+    buildCommand: python -m compileall -q main.py
+    startCommand: python main.py
+    healthCheckPath: /
+    autoDeployTrigger: checksPass
+    disk:
+      name: common-ground-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.7"
+      - key: HOST
+        value: 0.0.0.0
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: DATABASE_PATH
+        value: /var/data/forum.sqlite3services:
+  - type: web
+    name: common-ground-forum
+    runtime: python
+    plan: 0.5c-512mb
+    region: frankfurt
+    branch: main
+    buildCommand: python -m compileall -q main.py
+    startCommand: python main.py
+    healthCheckPath: /
+    autoDeployTrigger: checksPass
+    disk:
+      name: common-ground-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.7"
+      - key: HOST
+        value: 0.0.0.0
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: DATABASE_PATH
+        value: /var/data/forum.sqlite3

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Common Ground — Community Forum</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="shell">
+    <header><a class="brand" href="/"><span class="brand-mark">cg</span>Common Ground</a><nav><a class="active" href="/">Discussions</a><a href="/members">Members</a><a href="/about">About</a></nav><div class="profile">{{ACCOUNT_CONTROLS}}</div></header>
+    <section class="hero"><div><div class="eyebrow">Founded September 26, 2026</div><h1>A place where ideas find their next step.</h1><p>A small community for talking about work, creativity, and the things we want to make better.</p></div>{{NEW_TOPIC_BUTTON}}</section>
+    <main class="layout"><aside><p class="side-label">Categories</p><div class="categories"><a class="category selected" data-category="All topics">All topics <span>{{COUNT_ALL_TOPICS}}</span></a><a class="category" data-category="Discussions">Discussions <span>{{COUNT_DISCUSSIONS}}</span></a><a class="category" data-category="Projects">Projects <span>{{COUNT_PROJECTS}}</span></a><a class="category" data-category="Questions">Questions <span>{{COUNT_QUESTIONS}}</span></a><a class="category" data-category="Off-topic">Off-topic <span>{{COUNT_OFF_TOPIC}}</span></a></div><div class="side-note"><strong>Our community rule</strong>Make room for curiosity. Challenge ideas, not each other.</div></aside><section class="feed"><div class="feed-head"><h2>Recent conversations</h2><input class="search" id="search" type="search" placeholder="Search topics or #hashtags"></div><div class="tabs"><button class="tab active" data-tab="all">All</button><button class="tab" data-tab="popular">Popular</button><button class="tab" data-tab="new">New</button></div><div id="topics">{{TOPICS}}</div><div class="empty" id="empty" hidden>No topics found. Try a different search.</div></section></main>
+  </div>
+  {{TOPIC_MODAL}}
+  <script src="/static/app.js"></script>
+</body>
+</html>
