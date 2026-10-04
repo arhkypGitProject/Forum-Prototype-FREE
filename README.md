@@ -1,3 +1,11 @@
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/412c9678-5bec-4ace-9916-4077b8904c49" width="250"></td>
+    <td><img src="https://github.com/user-attachments/assets/cd12d23d-0c9a-4a71-a600-71659f74cb9b" width="250"></td>
+    <td><img src="https://github.com/user-attachments/assets/06acb6ae-9022-4358-86b2-50b2d4219ed5" width="250"></td>
+  </tr>
+</table>
+
 # Common Ground
 
 > A small community forum for thoughtful conversations, creative work, and projects in progress.
